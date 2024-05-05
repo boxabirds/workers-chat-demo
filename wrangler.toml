@@ -9,6 +9,9 @@ bindings = [
   { name = "limiters", class_name = "RateLimiter" }
 ]
 
+[ai]
+binding = "AI"
+
 [[rules]]
 type = "Data"
 globs = ["**/*.html"]
