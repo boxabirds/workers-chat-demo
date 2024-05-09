@@ -372,7 +372,7 @@ export class ChatRoom {
 
       if (!policyCheckResponse.ok) {
         let errorText = JSON.stringify(policyCheckResponse, null, 2);
-        console.error("Error response from Cloudflare Workers AI API:", errorText);
+        console.log("Error response from Cloudflare Workers AI API:", errorText);
         webSocket.send(JSON.stringify({error: "An error occurred while checking the message against the content policy. Error details: " + errorText}));
         return;
       }
